@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #FF9EAE, #9d2eed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  margin: 40px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.eye {
+  width: 245px;
+}
+#XMLID_4_{
+  -webkit-animation: moveEye 10s ease infinite;
+  -moz-animation: moveEye 10s ease infinite;
+  animation: moveEye 10s ease infinite;
+}
+#XMLID_10_{
+  -webkit-animation: moveWhiteEye 10s ease infinite;
+  -moz-animation: moveWhiteEye 10s ease infinite;
+  animation: moveWhiteEye 10s ease infinite;
+}
+
+@keyframes moveEye {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translate(-10px, 5px) scale(0.7);
+      fill: blue;
+
+  }
+  40% {
+      transform: translate(-5px, -10px) scale(1);
+      fill: navy;
+  }
+  60% {
+      transform: translate(10px, 0px) scale(1.1);
+      fill: green;
+  }
+  80% {
+      transform: translate(5px, -5px) scale(0.8);
+      fill: brown;
+  }
+  to {
+      transform: translate(0) scale(1);
+  }
+}
+@keyframes moveWhiteEye {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translate(-40px, 5px) ;
+
+  }
+  40% {
+      transform: translate(-5px, -10px) ;
+  }
+  60% {
+      transform: translate(10px, 0px);
+  }
+  80% {
+      transform: translate(-25px, -5px) ;
+  }
+  to {
+      transform: translate(0) scale(1);
+  }
+}
